@@ -3,9 +3,13 @@ html {
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1280px;
     margin: 0 auto;
+}
+
+img {
+    height: 100%;
 }
 
 h1,
@@ -14,6 +18,7 @@ h3,
 h4 {
     font-family: $heading-font;
     font-weight: 700;
+    margin: 0;
 }
         // topbar
 .logo,
@@ -55,7 +60,8 @@ button {
     padding: 0;
 }
 
-button a {
+button {
+    a {
     color: white;
     background-color: $green-style;
     padding: 10px 15px;
@@ -63,6 +69,7 @@ button a {
     font-weight: 700;
     font-size: 2.0rem;
     font-family: $heading-font;
+    }
 }
     // footer
 footer {
