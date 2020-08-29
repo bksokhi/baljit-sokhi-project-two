@@ -1,0 +1,91 @@
+.home {
+        // header
+    header {
+        height: 90vh;
+        background-image: url(./assets/home-image-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .header-container {
+            height: 100%;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 16.6rem;
+            line-height: 92px;
+            font-weight: 400;
+            z-index: 1;
+            border: 2px green solid;
+            width: 40%;
+        }
+
+        nav {
+            display: flex;
+            align-content: flex-start;
+            align-items: flex-start;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+        
+        span {
+            color: $yellow-style;
+        }
+
+        .title {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+        }
+
+        img {
+            height: 40vw;
+            position: absolute;
+            right: 0;
+            top: 20%;
+        }
+    }
+
+    main {
+
+        .about {
+            height: 100%;
+            background: $background-color;
+        }
+
+        .about-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 50px;
+
+            h2 {
+                font-size: 5.63rem;
+                letter-spacing: 1.3px;
+                
+            }
+
+            p {
+                width: 40%;;
+            }
+        }
+
+        .workshop-container,
+        .discover-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+            
+}

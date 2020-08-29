@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font;
+    font-weight: 700;
+}
+        // topbar
+.logo,
+nav {
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 2.0rem;
+}
+
+.logo {
+    font-size: 4.0rem;
+    color: white;
+}
+
+        // body
+body p,
+.juno,
+.copyright {
+    font-family: $body-font;
+    color: $main-text-color;
+    line-height: 32px;
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+    // links / buttons
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+button a {
+    color: white;
+    background-color: $green-style;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.0rem;
+    font-family: $heading-font;
+}
+    // footer
+footer {
+    background-color: $main-text-color;
+    padding: 5px 0;
+}
+
+.copyright,
+.juno {
+    color: white;
+    text-align: center;
+    line-height: 1;
+}
+
+.juno {
+    font-size: 1.5rem;
+}
+
+.juno a {
+    text-decoration: underline;
+}
