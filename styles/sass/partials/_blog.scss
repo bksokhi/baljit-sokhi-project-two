@@ -1,0 +1,164 @@
+.blog {
+    header {
+        height: 70vh;
+        background-image: url(./assets/blog-header-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .header-container {
+            height: 100%;
+        }
+        
+        h1 {
+            color: $yellow-style;
+            font-size: 16.6rem;
+            line-height: 92px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar {
+            background: black;
+        }
+
+        nav {
+            display: flex;
+            align-content: flex-start;
+            align-items: center;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    margin: 0 20px;
+
+                    a {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        
+        span {
+            color: $yellow-style;
+        }
+
+        .title {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .side-image {
+            img {
+                -webkit-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                -moz-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+
+                width: 120%;
+                object-fit: cover;
+
+            }
+            // position: absolute;
+            // right: 0;
+            // top: 25%;
+        }
+    }
+
+    main {
+
+        h2 {
+            font-size: 4.3rem;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 2.0rem;
+            line-height: 32px;
+            font-weight: 700;
+        }
+
+        padding-top: 120px;
+        background: $background-color;
+
+        .main-page {
+            display: flex;
+            justify-content: space-between;
+
+            aside {
+                width: 30%;
+                height: 100%;
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+                .aside-content {
+                    width: 90%;
+                    background-color: white;
+                    padding: 15px;
+                    
+                    a {
+                        color: $secondary-text-color;
+                        font-weight: 700;
+                    }
+
+                    ul {
+                        font-size: 2.0rem;
+                        font-weight: 400;
+                        line-height: 32px;
+                        
+                        li::before {
+                        content: "•"; color: $green-style;
+                        display: inline-block; width: 1em;
+                        margin-left: -1em}
+                            // code used from: https://www.w3.org/Style/Examples/007/color-bullets.en.html
+                        }
+                    }
+                }
+            }
+    
+            .side-container {
+                width: 60%;
+
+                .side-content {
+                    border-left: 5px solid $yellow-style;
+                    border-bottom: 5px solid $yellow-style;
+                    padding-left: 40px;
+                }
+                
+                .subtitle {
+                    font-style: italic;
+                    color: $secondary-text-color;
+                    margin: 0;
+                }
+                .side-content{
+                    padding-top: 50px;
+                }
+
+                .comment-container-one,
+                .comment-container-two {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 30px 0;
+
+                    .comment-image-one,
+                    .comment-image-two {
+                        height: 100%;
+                        margin-right: 20px;
+                    }
+                }
+
+                .comments {
+                    padding-top: 25px;
+                }
+            }
+
+
+        }
+
+
+    
+}
