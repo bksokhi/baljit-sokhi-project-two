@@ -156,9 +156,57 @@
                 }
             }
 
+            // form
 
-        }
+            .my-form {
+                input,
+                textarea {
+                    font-family: $heading-font;
+                    font-size: 2.0rem;
+                    line-height: 32px;
+                    font-weight: lighter;
+                    color: $main-text-color;
+                }
+            }
 
+            .form-container {
+                display: flex;
+                justify-content: space-between;
+            
+                input {
+                    width: 35vh;
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    border: none;
+                    border-bottom: 1px solid $green-style;
+                    background-color: $background-color;
+                }
+            }
 
-    
+            
+            .submit-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 40px;
+                
+                
+                textarea {
+                    padding: 15px;
+                    border: 1px solid $green-style;
+                    background-color: $background-color;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    color: white;
+                    background-color: $green-style;
+                    padding: 10px 15px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 2.0rem;
+                    font-family: $heading-font;
+                }
+            }
+    }
 }

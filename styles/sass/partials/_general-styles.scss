@@ -71,6 +71,10 @@ button {
     font-family: $heading-font;
     }
 }
+
+a:hover {
+    color: $yellow-style;
+}
     // footer
 footer {
     background-color: $main-text-color;

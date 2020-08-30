@@ -307,6 +307,10 @@ button a {
   font-family: "Josefin Sans", sans-serif;
 }
 
+a:hover {
+  color: #F8E71C;
+}
+
 footer {
   background-color: #2C2C2C;
   padding: 5px 0;
@@ -344,7 +348,6 @@ footer {
   line-height: 92px;
   font-weight: 400;
   z-index: 1;
-  border: 2px green solid;
   width: 60%;
 }
 
@@ -395,7 +398,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid red;
 }
 
 .home header img {
@@ -774,4 +776,62 @@ footer {
 
 .blog main .side-container .comments {
   padding-top: 25px;
+}
+
+.blog main .my-form input,
+.blog main .my-form textarea {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.0rem;
+  line-height: 32px;
+  font-weight: lighter;
+  color: #2C2C2C;
+}
+
+.blog main .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog main .form-container input {
+  width: 35vh;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #0E902D;
+  background-color: #F0EFED;
+}
+
+.blog main .submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.blog main .submit-container textarea {
+  padding: 15px;
+  border: 1px solid #0E902D;
+  background-color: #F0EFED;
+  margin-bottom: 30px;
+}
+
+.blog main .submit-container button {
+  color: white;
+  background-color: #0E902D;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  font-family: "Josefin Sans", sans-serif;
 }
