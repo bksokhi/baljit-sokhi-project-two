@@ -1,0 +1,140 @@
+.contact-page {
+    header {
+        height: 70vh;
+        background-image: url(./assets/contact-header-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .header-container {
+            height: 100%;
+        }
+        
+        h1 {
+            color: $yellow-style;
+            font-size: 8.0rem;
+            line-height: 92px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .top-bar {
+            background: black;
+        }
+
+        nav {
+            display: flex;
+            align-content: flex-start;
+            align-items: center;
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    margin: 0 20px;
+
+                    a {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        
+        span {
+            color: $yellow-style;
+        }
+
+        .title {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    
+    }
+
+    main {
+        background: $background-color;
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+
+            aside {
+                width: 30%;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+
+                .socials {
+
+                    ul {
+                        padding-left: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 2.0rem;
+
+                        a {
+                            color: $green-style;
+                        }
+                    }
+                }
+            }
+
+            .form {
+                width: 60%;
+
+                .my-form {
+
+                    background: white;
+                    padding: 20px 40px;
+
+                    input,
+                    textarea {
+                        font-family: $heading-font;
+                        font-size: 2.0rem;
+                        line-height: 32px;
+                        font-weight: li;
+                        color: $main-text-color;
+                    }
+                }
+
+                .form-container {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        width: 35vh;
+                        margin-bottom: 20px;
+                        padding: 15px;
+                        border: none;
+                        border-bottom: 1px solid $green-style;
+                    }
+                }
+
+                .submit-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+
+                    textarea {
+                        padding: 15px;
+                        border: 1px solid $green-style;
+                        margin-bottom: 30px;
+                    }
+
+                    button {
+                        color: white;
+                        background-color: $green-style;
+                        padding: 10px 15px;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 2.0rem;
+                        font-family: $heading-font;
+                    }
+                }
+            }
+            
+        } 
+    }
+}
