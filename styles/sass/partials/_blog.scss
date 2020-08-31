@@ -58,11 +58,7 @@
 
                 width: 120%;
                 object-fit: cover;
-
             }
-            // position: absolute;
-            // right: 0;
-            // top: 25%;
         }
     }
 
@@ -94,12 +90,23 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+
+                .aside-image {
+                    img {
+                        height: 25vw;
+                        -webkit-box-shadow: 20px 20px 0px -1px white;
+                        -moz-box-shadow: 20px 20px 0px -1px white;
+                        box-shadow: 20px 20px 0px -1px white;
+                    }
+                }
                 
                 .aside-content {
-                    width: 90%;
+                    width: 80%;
                     background-color: white;
                     padding: 15px;
+                    margin-right: -19px;
                     
+                
                     a {
                         color: $secondary-text-color;
                         font-weight: 700;
@@ -121,12 +128,25 @@
             }
     
             .side-container {
-                width: 60%;
+                width: 50%;
+                margin-top: -300px;
+                
 
+                .side-image {
+                    img {
+                    height: 30vw;
+                    -webkit-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                    -moz-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                    box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+
+                    margin-left: 19px;
+                    }
+
+
+                }
                 .side-content {
                     border-left: 5px solid $yellow-style;
                     border-bottom: 5px solid $yellow-style;
-                    padding-left: 40px;
                 }
                 
                 .subtitle {
@@ -207,6 +227,10 @@
                     font-size: 2.0rem;
                     font-family: $heading-font;
                 }
+
+                button:hover {
+                        background-color: $secondary-text-color;
+                    }
             }
     }
 }

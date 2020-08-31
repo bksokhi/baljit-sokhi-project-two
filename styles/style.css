@@ -246,6 +246,11 @@ html {
   margin: 0 auto;
 }
 
+.wrapper-large {
+  width: 100px;
+  max-width: 1290px;
+}
+
 img {
   height: 100%;
 }
@@ -357,9 +362,9 @@ footer {
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home header nav ul {
@@ -447,7 +452,6 @@ footer {
 
 .home main .posts {
   min-width: 360px;
-  position: relative;
 }
 
 .home main .workshop-container,
@@ -458,14 +462,14 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
+  margin: 100px 0;
   min-width: 360px;
 }
 
 .home main .content-right,
 .home main .content-left {
   width: 50%;
-  border: 2px solid red;
+  margin: 50px 0;
 }
 
 .home main .content-left {
@@ -474,24 +478,25 @@ footer {
 
 .home main .image-left {
   width: 50%;
-  border: 2px solid blue;
 }
 
 .home main .image-left img {
   height: 25vw;
   -webkit-box-shadow: 20px 20px 0px -1px #f8e71c;
   box-shadow: 20px 20px 0px -1px #f8e71c;
+  margin-top: -200px;
 }
 
 .home main .image-right {
   width: 50%;
-  border: 2px solid blue;
 }
 
 .home main .image-right img {
   height: 25vw;
   -webkit-box-shadow: -20px 20px 0px -1px #f8e71c;
   box-shadow: -20px 20px 0px -1px #f8e71c;
+  margin-left: 150px;
+  margin-top: -100px;
 }
 
 .home main .menu {
@@ -530,6 +535,12 @@ footer {
   color: #2C2C2C;
   background: #F8E71C;
   border-radius: 50%;
+  margin-right: 20px;
+}
+
+.home main .menu .menu-top .icon-container .icon-heading a:hover i,
+.home main .menu .menu-bottom .icon-container .icon-heading a:hover i {
+  background: #0E902D;
 }
 
 .home main .banner {
@@ -710,10 +721,17 @@ footer {
           align-items: flex-end;
 }
 
+.blog main .main-page aside .aside-image img {
+  height: 25vw;
+  -webkit-box-shadow: 20px 20px 0px -1px white;
+  box-shadow: 20px 20px 0px -1px white;
+}
+
 .blog main .main-page aside .aside-content {
-  width: 90%;
+  width: 80%;
   background-color: white;
   padding: 15px;
+  margin-right: -19px;
 }
 
 .blog main .main-page aside .aside-content a {
@@ -736,13 +754,20 @@ footer {
 }
 
 .blog main .side-container {
-  width: 60%;
+  width: 50%;
+  margin-top: -300px;
+}
+
+.blog main .side-container .side-image img {
+  height: 30vw;
+  -webkit-box-shadow: -20px 20px 0px -1px #f8e71c;
+  box-shadow: -20px 20px 0px -1px #f8e71c;
+  margin-left: 19px;
 }
 
 .blog main .side-container .side-content {
   border-left: 5px solid #F8E71C;
   border-bottom: 5px solid #F8E71C;
-  padding-left: 40px;
 }
 
 .blog main .side-container .subtitle {
@@ -836,6 +861,10 @@ footer {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.blog main .submit-container button:hover {
+  background-color: #074115;
+}
+
 .contact-page header {
   height: 70vh;
   background-image: url(./assets/contact-header-1.jpg);
@@ -912,6 +941,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .contact-page main .main-container aside {
@@ -934,20 +964,40 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2.0rem;
+  font-size: 3.0rem;
 }
 
 .contact-page main .main-container aside .socials ul a {
   color: #0E902D;
 }
 
+.contact-page main .main-container aside .socials ul a:hover {
+  font-size: 3.5rem;
+}
+
+.contact-page main .main-container aside .address h2 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
 .contact-page main .main-container .form {
   width: 60%;
+}
+
+.contact-page main .main-container .form form {
+  width: 700px;
+  height: 400px;
+  margin-top: -300px;
+  bottom: 30%;
 }
 
 .contact-page main .main-container .form .my-form {
   background: white;
   padding: 20px 40px;
+  -webkit-box-shadow: -20px 20px 0px -1px #f8e71c;
+  box-shadow: -20px 20px 0px -1px #f8e71c;
+  padding-bottom: 550px;
 }
 
 .contact-page main .main-container .form .my-form input,
@@ -1003,4 +1053,8 @@ footer {
   font-weight: 700;
   font-size: 2.0rem;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-page main .main-container .form .submit-container button:hover {
+  background-color: #074115;
 }

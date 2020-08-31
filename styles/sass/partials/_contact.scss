@@ -58,6 +58,7 @@
         .main-container {
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             aside {
                 width: 30%;
@@ -71,23 +72,48 @@
                         padding-left: 0;
                         display: flex;
                         justify-content: space-between;
-                        font-size: 2.0rem;
+                        font-size: 3.0rem;
 
                         a {
                             color: $green-style;
                         }
+
+                        a:hover {
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+
+                .address {
+                    h2 {
+                        font-size: 3.2rem;
+                        letter-spacing: 1px;
+                        font-weight: 700;
                     }
                 }
             }
 
             .form {
                 width: 60%;
+                
+                form {
+                    width: 700px;
+                    height: 400px;
+                    margin-top: -300px;
+                    bottom: 30%;
+                   
+                    
+                }
 
                 .my-form {
-
                     background: white;
                     padding: 20px 40px;
+                    -webkit-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                    -moz-box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
+                    box-shadow: -20px 20px 0px -1px rgba(248,231,28,1);
 
+                    padding-bottom: 550px;
+                    
                     input,
                     textarea {
                         font-family: $heading-font;
@@ -131,6 +157,10 @@
                         font-weight: 700;
                         font-size: 2.0rem;
                         font-family: $heading-font;
+                    }
+
+                    button:hover {
+                        background-color: $secondary-text-color;
                     }
                 }
             }
